@@ -6,7 +6,7 @@ const todoRoutes = require('./routes/todos');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://admin:password@18.153.97.170:27017/myDB?authSource=admin')
+mongoose.connect('mongodb://admin:password@3.67.170.112:27017/myDB?authSource=admin')
 .then(() => {
   console.log('Successfully connected to MongoDB');
 })
