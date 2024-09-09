@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require("path")
 const bodyParser = require('body-parser');
 const todoRoutes = require('./routes/todos');
 
@@ -16,7 +17,7 @@ mongoose.connect('mongodb://admin:password@3.67.170.112:27017/myDB?authSource=ad
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 
 // Routes
