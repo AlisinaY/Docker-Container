@@ -5,4 +5,4 @@ ENV MONGO_DB_USERNAME=admin \
 
 RUN mkdir -p /home/app
 
-CMD ["node", "app.js"]
+CMD ["node", "/home/app/app.js"]
