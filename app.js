@@ -7,7 +7,7 @@ const todoRoutes = require('./routes/todos');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://admin:password@3.67.170.112:27017/myDB?authSource=admin')
+mongoose.connect('mongodb://admin:password@3.79.63.5:27017/myDB?authSource=admin')
 .then(() => {
   console.log('Successfully connected to MongoDB');
 })
@@ -18,6 +18,7 @@ mongoose.connect('mongodb://admin:password@3.67.170.112:27017/myDB?authSource=ad
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
+app.set("view engine", "ejs")
 app.use(express.static('public'));
 
 // Routes

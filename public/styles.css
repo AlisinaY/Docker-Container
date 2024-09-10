@@ -140,3 +140,78 @@ a:hover {
   color: #007BFF;
   font-size: 1.1rem;
 }
+
+/* Specific Styles for Edit and Add Pages */
+.edit-container, .add-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edit-container h1, .add-container h1 {
+  color: #007BFF;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.edit-container form, .add-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-container label, .add-container label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.edit-container input, .add-container input, 
+.edit-container textarea, .add-container textarea {
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.edit-container input:focus, .add-container input:focus, 
+.edit-container textarea:focus, .add-container textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #fff;
+}
+
+.edit-container button, .add-container button {
+  align-self: flex-start;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-container button:hover, .add-container button:hover {
+  background-color: #218838;
+}
+
+/* Back to Todo List Link */
+.back-to-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-to-list a {
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.back-to-list a:hover {
+  text-decoration: underline;
+}
