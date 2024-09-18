@@ -26,6 +26,8 @@ app.use(express.static('public'));
 app.use('/todos', todoRoutes);
 
 app.get('/', (req, res) => {
+  console.log("Hello Ali Sina and how are you doing today?");
+  console.log("Hello Alisina, and how are you doing today?");
   res.redirect('/todos');
 });
 
