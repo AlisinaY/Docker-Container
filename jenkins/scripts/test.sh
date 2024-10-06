@@ -1,5 +1,8 @@
 #!/bin/bash
 
+chmod +x jenkins/scripts/test.sh
+
+
 # Exit script if any command fails
 set -e
 
