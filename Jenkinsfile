@@ -1,4 +1,7 @@
 
+
+
+
 pipeline {
     agent any
     tools {
@@ -8,6 +11,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
+                sh 'npm install -D webpack-cli' // Installiere webpack-cli
             }
         }
         stage('Build') {
