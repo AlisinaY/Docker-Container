@@ -27,7 +27,7 @@ app.use(express.static("public"));
 app.use("/todos", todoRoutes);
 
 app.get("/", (req, res) => {
-  console.log("Just For Test");
+  console.log("Just For Test and Just for Test again");
   res.redirect("/todos");
 });
 
